@@ -19,8 +19,7 @@ public class Main {
         System.out.println(set.size());
         set.clear();
         System.out.println(Arrays.toString(set.toArray()));
-
-
+        System.out.println(set.isEmpty());
 
     }
 }

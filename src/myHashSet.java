@@ -59,7 +59,7 @@ public class myHashSet implements mySet<String> {
     public boolean isEmpty() {
         return size == 0;
     }
-
+    // todo: refactor to method from 66 to 75
     @Override
     public boolean remove(String o) throws Exception {
         checkNull(o);
@@ -83,7 +83,7 @@ public class myHashSet implements mySet<String> {
     public int size() {
         return size;
     }
-
+    // todo : StringBuffer
     @Override
     public String[] toArray() {
         String[] returnArr = new String[size];
@@ -94,6 +94,7 @@ public class myHashSet implements mySet<String> {
     }
 
     // technical method
+    //  todo: change to boolean
     private void checkNull(String e) throws Exception {
         if (e == null) {
             throw new Exception("expected to get String type value");
